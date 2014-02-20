@@ -1,0 +1,21 @@
+{
+  "name": "pkgcloud-archive",
+  "version": "0.0.0",
+  "description": "A simple utility to archive and delete local files. To the cloud!",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "cloud",
+    "backup",
+    "archive",
+    "cron"
+  ],
+  "author": "Ken Perkins <ken.perkins@rackspace.com>",
+  "license": "MIT",
+  "dependencies": {
+    "pkgcloud": "0.9.0",
+    "async": "0.2.10"
+  }
+}
