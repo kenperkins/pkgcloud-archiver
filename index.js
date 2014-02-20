@@ -34,7 +34,7 @@ async.forEachSeries(files, function(handle, next) {
     var source = fs.createReadStream(filename);
 
     var dest = client.upload({
-      remote: handle,
+      remote: require('os').hostname() + '_' + handle,
       container: config.container,
       headers: {
         'Etag': md5
@@ -84,7 +84,7 @@ function computeMD5(path, callback) {
   });
 
   fd.pipe(hash);
-  
+
   function cb(err, hash) {
     if (calledBack) {
       return;
