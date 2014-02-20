@@ -13,7 +13,7 @@ concept**. As such I have *not published* this to npm.
 
 You need to add a `config.json` to the local directory, and then run:
 
-```json
+```javascript
 {
   "auth": {
     "username": "your-rackspace-username",
@@ -29,4 +29,8 @@ You need to add a `config.json` to the local directory, and then run:
 }
 ```
 
-`node index.js`
+#### Execution
+
+```bash
+> node index.js
+```
